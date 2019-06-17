@@ -1,0 +1,14 @@
+C:\Users\Kuba\source\repos\WCFBiblio\WCFBiblio\bin\Debug\WCFBiblio.dll.config
+C:\Users\Kuba\source\repos\WCFBiblio\WCFBiblio\bin\Debug\WCFBiblio.dll
+C:\Users\Kuba\source\repos\WCFBiblio\WCFBiblio\bin\Debug\WCFBiblio.pdb
+C:\Users\Kuba\source\repos\WCFBiblio\WCFBiblio\obj\Debug\WCFBiblio.csprojAssemblyReference.cache
+C:\Users\Kuba\source\repos\WCFBiblio\WCFBiblio\obj\Debug\WCFBiblio.csproj.CoreCompileInputs.cache
+C:\Users\Kuba\source\repos\WCFBiblio\WCFBiblio\obj\Debug\WCFBiblio.dll
+C:\Users\Kuba\source\repos\WCFBiblio\WCFBiblio\obj\Debug\WCFBiblio.pdb
+C:\Users\locadm\Desktop\Repos\WCF\WCFBiblio\WCFBiblio\obj\Debug\WCFBiblio.dll
+C:\Users\locadm\Desktop\Repos\WCF\WCFBiblio\WCFBiblio\obj\Debug\WCFBiblio.pdb
+C:\Users\locadm\Desktop\Repos\WCF\WCFBiblio\WCFBiblio\obj\Debug\WCFBiblio.csprojAssemblyReference.cache
+C:\Users\locadm\Desktop\Repos\WCF\WCFBiblio\WCFBiblio\obj\Debug\WCFBiblio.csproj.CoreCompileInputs.cache
+C:\Users\locadm\Desktop\Repos\WCF\WCFBiblio\WCFBiblio\bin\Debug\WCFBiblio.dll.config
+C:\Users\locadm\Desktop\Repos\WCF\WCFBiblio\WCFBiblio\bin\Debug\WCFBiblio.dll
+C:\Users\locadm\Desktop\Repos\WCF\WCFBiblio\WCFBiblio\bin\Debug\WCFBiblio.pdb

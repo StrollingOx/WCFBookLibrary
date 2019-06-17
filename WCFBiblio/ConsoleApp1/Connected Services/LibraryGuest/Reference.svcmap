@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="afd7c1c4-9d7c-4759-8392-2fc590c13ec2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/WCFBiblio/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="6ea37323-1cab-4d29-aae5-18131324e8f8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WCFBiblio/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="2f70bf83-013e-444c-80ae-cb680922f035" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WCFBiblio/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="febedb64-4e32-45f5-87c7-19bb737ef896" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WCFBiblio/Service1/mex" />
+    <MetadataFile FileName="WCFBookLibrary.xsd" MetadataType="Schema" ID="b866ea71-74b7-443e-bd6a-23b829a3b992" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WCFBiblio/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
