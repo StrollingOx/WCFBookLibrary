@@ -18,9 +18,29 @@
   <xs:element name="Book" nillable="true" type="tns:Book" />
   <xs:complexType name="Author">
     <xs:sequence>
+      <xs:element minOccurs="0" name="SingleAuthor" type="xs:boolean" />
+      <xs:element minOccurs="0" name="_authors" nillable="true" type="tns:ArrayOfAuthor" />
       <xs:element minOccurs="0" name="_name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="_surname" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Author" nillable="true" type="tns:Author" />
+  <xs:complexType name="ArrayOfAuthor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Author" nillable="true" type="tns:Author" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAuthor" nillable="true" type="tns:ArrayOfAuthor" />
+  <xs:complexType name="BookIsAlreadyRentedFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookIsAlreadyRentedFault" nillable="true" type="tns:BookIsAlreadyRentedFault" />
+  <xs:complexType name="NoSuchBooksFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NoSuchBooksFault" nillable="true" type="tns:NoSuchBooksFault" />
 </xs:schema>

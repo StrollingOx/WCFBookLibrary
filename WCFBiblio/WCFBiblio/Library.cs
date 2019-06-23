@@ -11,7 +11,6 @@ namespace WCFBookLibrary
     [ServiceBehaviorAttribute(InstanceContextMode = InstanceContextMode.PerSession)]
     public class Library : ILibrary
     {
-
         List<Book> bookList = new List<Book>();
         List<Book> rentedBookList = new List<Book>();
 
@@ -28,7 +27,12 @@ namespace WCFBookLibrary
             bookList.Add(new Book("GenericBookTitle_2", new Author("GenericName2", "GenericSurname2"), 2002, false, i++));
             bookList.Add(new Book("GenericBookTitle_3", new Author("GenericName3", "GenericSurname3"), 2003, false, i++));
             bookList.Add(new Book("BookFromFuture", new Author("AwsomeName", "AwsomeSurname"), 2077, false, i++));
-            bookList.Add(new Book("BookFromMoreFuturisticFuture", new Author("Aguy", "Hissurname"), 2077, false, i++));
+
+            List<Author> Authors = new List<Author>();
+            Authors.Add(new Author("First", "Author"));
+            Authors.Add(new Author("Second", "Author"));
+
+            bookList.Add(new Book("BookFromMoreFuturisticFuture", new Author(Authors), 2077, false, i++));
 
         }
 
@@ -47,14 +51,22 @@ namespace WCFBookLibrary
         {
             List<Book> tmpList = new List<Book>();
 
-
-
             foreach (Book book in bookList)
             {
                 if (book.Title.Contains(text)){
                     tmpList.Add(book);
                 }
             }
+
+            if(tmpList.Count == 0)
+            {
+                NoSuchBooksFault fault = new NoSuchBooksFault();
+
+                fault.Description = "There are no books containing word '" + text + "'";
+
+                throw new FaultException<NoSuchBooksFault>(fault);
+            }
+
             return tmpList;
         }
 
@@ -68,10 +80,20 @@ namespace WCFBookLibrary
         }
 
         public void RentBook(int signature) {
+            if (bookList[signature].IsRented == true)
+            {
+                BookIsAlreadyRentedFault fault = new BookIsAlreadyRentedFault();
+
+                fault.Description = "The book is already rented!";
+
+                throw new FaultException<BookIsAlreadyRentedFault>(fault);
+            }
+            bookList[signature].IsRented = true;
             rentedBookList.Add(bookList[signature]);
         }
 
         public void ReturnBook(int signature){
+            bookList[signature].IsRented = false;
             rentedBookList.Remove(bookList[signature]);
         }
 

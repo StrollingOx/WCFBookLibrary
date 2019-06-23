@@ -19,9 +19,11 @@ namespace WCFBookLibrary
         List<Book> GetAllRentedBooks();
 
         [OperationContract]
+        [FaultContract(typeof(BookIsAlreadyRentedFault))]
         List<Book> GetAllBooksWithTitleLike(String text);
 
         [OperationContract]
+        [FaultContract(typeof(NoSuchBooksFault))]
         void ReturnBook(int signature);
 
         [OperationContract]
@@ -41,6 +43,7 @@ namespace WCFBookLibrary
         private String _title;
         public String Title { set { _title = value; } get=>_title; }
 
+        //TODO: List of authors
         [DataMember]
         private Author _dude;
         public Author Dude { set { _dude = value; } get=>_dude; }
@@ -65,25 +68,48 @@ namespace WCFBookLibrary
             this.Signature = Signature;
             this.IsRented = isRented;
         }
+
     }
     [DataContract]
     public class Author
     {
+        [DataMember]
+        public bool SingleAuthor;
         [DataMember]
         private String _name;
         public String Name { set { _name = value; } get=>_name; }
         [DataMember]
         private String _surname;
         public String Surname { set { _surname = value; } get=>_surname; }
-        [OperationContract] //NOT WORKING!
-        public String GetFullName()
-        {
-            return _name + " " + _surname;
-        }
+        [DataMember]
+        private List<Author> _authors;
+        public List<Author> Authors { set {_authors = value; } get=>_authors; }
+        
         public Author (String Name, String Surname)
         {
+            SingleAuthor = true;
             _name = Name;
             _surname = Surname;
         }
+
+        public Author (List<Author> Authors)
+        {
+            SingleAuthor = false;
+            _authors = Authors;
+        }
+    }
+
+    [DataContract]
+    public class BookIsAlreadyRentedFault
+    {
+        [DataMember]
+        public string Description { get; set; }
+    }
+
+    [DataContract]
+    public class NoSuchBooksFault
+    {
+        [DataMember]
+        public string Description { get; set; }
     }
 }
