@@ -1,0 +1,5 @@
+C:\Users\locadm\Desktop\Repos\WCFBookLibrary\WCFBiblio\WCFBiblio\bin\Run\WCFBiblio.dll.config
+C:\Users\locadm\Desktop\Repos\WCFBookLibrary\WCFBiblio\WCFBiblio\bin\Run\WCFBiblio.dll
+C:\Users\locadm\Desktop\Repos\WCFBookLibrary\WCFBiblio\WCFBiblio\obj\Run\WCFBookLibrary.csprojAssemblyReference.cache
+C:\Users\locadm\Desktop\Repos\WCFBookLibrary\WCFBiblio\WCFBiblio\obj\Run\WCFBookLibrary.csproj.CoreCompileInputs.cache
+C:\Users\locadm\Desktop\Repos\WCFBookLibrary\WCFBiblio\WCFBiblio\obj\Run\WCFBiblio.dll

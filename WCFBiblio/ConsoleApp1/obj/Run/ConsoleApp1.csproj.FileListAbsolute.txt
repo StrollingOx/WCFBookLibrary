@@ -1,0 +1,5 @@
+C:\Users\locadm\Desktop\Repos\WCFBookLibrary\WCFBiblio\ConsoleApp1\bin\Run\ConsoleApp1.exe.config
+C:\Users\locadm\Desktop\Repos\WCFBookLibrary\WCFBiblio\ConsoleApp1\bin\Run\ConsoleApp1.exe
+C:\Users\locadm\Desktop\Repos\WCFBookLibrary\WCFBiblio\ConsoleApp1\obj\Run\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\locadm\Desktop\Repos\WCFBookLibrary\WCFBiblio\ConsoleApp1\obj\Run\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\locadm\Desktop\Repos\WCFBookLibrary\WCFBiblio\ConsoleApp1\obj\Run\ConsoleApp1.exe

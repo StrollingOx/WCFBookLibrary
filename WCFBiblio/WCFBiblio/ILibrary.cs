@@ -19,14 +19,14 @@ namespace WCFBookLibrary
         List<Book> GetAllRentedBooks();
 
         [OperationContract]
-        [FaultContract(typeof(BookIsAlreadyRentedFault))]
+        [FaultContract(typeof(NoSuchBooksFault))]
         List<Book> GetAllBooksWithTitleLike(String text);
 
         [OperationContract]
-        [FaultContract(typeof(NoSuchBooksFault))]
         void ReturnBook(int signature);
 
         [OperationContract]
+        [FaultContract(typeof(BookIsAlreadyRentedFault))]
         void RentBook(int signature);
 
         [OperationContract]

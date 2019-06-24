@@ -31,16 +31,16 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfAuthor" nillable="true" type="tns:ArrayOfAuthor" />
-  <xs:complexType name="BookIsAlreadyRentedFault">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="BookIsAlreadyRentedFault" nillable="true" type="tns:BookIsAlreadyRentedFault" />
   <xs:complexType name="NoSuchBooksFault">
     <xs:sequence>
       <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="NoSuchBooksFault" nillable="true" type="tns:NoSuchBooksFault" />
+  <xs:complexType name="BookIsAlreadyRentedFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookIsAlreadyRentedFault" nillable="true" type="tns:BookIsAlreadyRentedFault" />
 </xs:schema>
